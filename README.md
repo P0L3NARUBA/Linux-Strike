@@ -12,6 +12,7 @@
 * Linux Strike: Mint Offensive(LS:MO) is a CS:GO port aimed towards Linux enthusiasts.<br>
 It can be built 100% Open-Source with optional Closed-source components.<br>
 * See the wiki page of repository for everything about Compiling Linux Strike and more: https://github.com/P0L3NARUBA/Linux-Strike/wiki
+* Arch is Recommended
 
  <h1 align="center"> Fixed Bugs & Additions </h1>
 
