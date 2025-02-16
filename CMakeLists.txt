@@ -121,7 +121,7 @@ if( USE_IPHYS )
 elseif( USE_BULLET_PHYSICS )
     add_definitions(-DUSE_BULLET_PHYSICS)
     #lwss: threading is experimental
-    if( USE_BULLET_PHYSICS_THREADED )
+    if( -DBULLET_PHYSICS_MT=1 )
         add_definitions(-DBT_THREADSAFE -DBT_USE_OPENMP)
         set(BULLET2_MULTITHREADING ON CACHE BOOL "" FORCE)
         set(BULLET2_USE_OPEN_MP_MULTITHREADING ON CACHE BOOL "" FORCE)
