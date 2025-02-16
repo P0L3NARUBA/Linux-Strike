@@ -1,4 +1,4 @@
-//====== Copyright © 1996-2005, Valve Corporation, All rights reserved. =======
+//====== Copyright ï¿½ 1996-2005, Valve Corporation, All rights reserved. =======
 //
 // Purpose:
 //
@@ -29,7 +29,7 @@ public:
 
 	CSensorGrenade() {}
 
-	virtual CSWeaponID GetCSWeaponID( void ) const { return WEAPON_TAGRENADE; }
+	// virtual CSWeaponID GetCSWeaponID( void ) const { return WEAPON_TAGRENADE; }
 
 #if !defined( CLIENT_DLL )
 	DECLARE_DATADESC();

@@ -305,7 +305,7 @@ void SFHudWeaponPanel::ProcessInput( void )
 			case WEAPON_MOLOTOV:
 			case WEAPON_INCGRENADE:
 			case WEAPON_FLASHBANG:
-			case WEAPON_TAGRENADE:
+//			case WEAPON_TAGRENADE:
 				ammoType = 1;
 				break;
 			case WEAPON_HEGRENADE:

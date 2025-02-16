@@ -1,10 +1,5 @@
 ![Linux-Strike Logo](https://github.com/user-attachments/assets/b900033d-ade3-474d-9862-6481f664c558)
 
-<div align="center">
-<img src="https://img.shields.io/badge/CI--Workflow-passing-green?logo=github">
-</div>
-
-
 <h1 align="center"> Linux-Strike </h1>
 
 * Linux Strike: Mint Offensive(LS:AO) is a CS:GO port aimed towards Linux enthusiasts.<br>
@@ -12,22 +7,18 @@ It can be built 100% Open-Source with optional Closed-source components.<br>
 * See the wiki page of repository for everything about Compiling Linux Strike and more: https://github.com/P0L3NARUBA/Linux-Strike/wiki
 * Arch is recommended, so download [Arch Linux](https://archlinux.org/) and Install it with [archinstall](https://wiki.archlinux.org/title/Archinstall) for an easy setup. 
 
- <h1 align="center"> Fixed Bugs & Additions </h1>
+ <h1 align="center"> Features / Additions </h1>
  
  - Now when you control the bots, guns will not get lost
  - Bots will now aim more accurately
  - Fixed issue that molotov flame being spawned under you 
  - "Cant Create Mixer" issues fixed, now game can find sounds
  - Fixed some breakable props fly away or doing strange behaviour
+ - Fixed weapon entries in the buy menu so you can buy all the guns completely fine
+ - Fixed "item_assaultsuit is missing an item definition in the schema" error (sort of)
  - A lot of changes made into the ivp, vphysics and gameplay in general
  - Ragdolls was behaving weird, now everything works as intended
  - Lots of bugs got fixed and we added a lot of other large variety of things.
-
-<h1 align="center"> TO-DO </h1>
-
-- Remove code/item leftovers and clean-up the unnecessary stuff
-- Fix "item_assaultsuit is missing an item definition in the schema" error
-- Fix cannot purchase some weapons.
 
 **<p align="center">
 If you want to contribute to our repo, don't even hesitate.<br>

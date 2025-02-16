@@ -1,4 +1,4 @@
-//====== Copyright © 1996-2005, Valve Corporation, All rights reserved. =======
+//====== Copyright ï¿½ 1996-2005, Valve Corporation, All rights reserved. =======
 //
 // Purpose: 
 //
@@ -30,8 +30,8 @@ END_NETWORK_TABLE()
 BEGIN_PREDICTION_DATA( CSensorGrenade )
 END_PREDICTION_DATA()
 
-LINK_ENTITY_TO_CLASS_ALIASED( weapon_tagrenade, SensorGrenade );
-PRECACHE_REGISTER( weapon_tagrenade );
+//LINK_ENTITY_TO_CLASS_ALIASED( weapon_tagrenade, SensorGrenade );
+//PRECACHE_REGISTER( weapon_tagrenade );
 
 #if !defined( CLIENT_DLL )
 

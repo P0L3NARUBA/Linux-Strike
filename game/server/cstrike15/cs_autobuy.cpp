@@ -1,4 +1,4 @@
-//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ============//
+//========= Copyright ï¿½ 1996-2005, Valve Corporation, All rights reserved. ============//
 //
 // Purpose: Data for Autobuy and Rebuy 
 //
@@ -31,13 +31,14 @@ AutoBuyInfoStruct g_autoBuyInfo[] =
 	{ (AutoBuyClassType)(AUTOBUYCLASS_SECONDARY | AUTOBUYCLASS_PISTOL),			LOADOUT_POSITION_INVALID, "p228", "weapon_p228" }, // p228
 	{ (AutoBuyClassType)(AUTOBUYCLASS_SECONDARY | AUTOBUYCLASS_PISTOL),			LOADOUT_POSITION_SECONDARY4, "deagle", "weapon_deagle" }, // deagle
 	{ (AutoBuyClassType)(AUTOBUYCLASS_SECONDARY | AUTOBUYCLASS_PISTOL),			LOADOUT_POSITION_SECONDARY1, "elite", "weapon_elite" },	// elites
-	{ (AutoBuyClassType)(AUTOBUYCLASS_SECONDARY | AUTOBUYCLASS_PISTOL),			LOADOUT_POSITION_SECONDARY3, "fn57", "weapon_fiveseven" },	// fn57
+	{ (AutoBuyClassType)(AUTOBUYCLASS_SECONDARY | AUTOBUYCLASS_PISTOL),			LOADOUT_POSITION_SECONDARY3, "fiveseven", "weapon_fiveseven" },	// fn57
 	{ (AutoBuyClassType)(AUTOBUYCLASS_SECONDARY | AUTOBUYCLASS_PISTOL),			LOADOUT_POSITION_SECONDARY0, "hkp2000", "weapon_hkp2000" },	// hkp2000
 	{ (AutoBuyClassType)(AUTOBUYCLASS_SECONDARY | AUTOBUYCLASS_PISTOL),			LOADOUT_POSITION_SECONDARY0, "usp_silencer", "weapon_usp_silencer" },	// usp_silencer
 	{ (AutoBuyClassType)(AUTOBUYCLASS_SECONDARY | AUTOBUYCLASS_PISTOL),			LOADOUT_POSITION_SECONDARY2, "p250", "weapon_p250" },	// p250
 	{ (AutoBuyClassType)(AUTOBUYCLASS_SECONDARY | AUTOBUYCLASS_PISTOL),			LOADOUT_POSITION_SECONDARY3, "tec9", "weapon_tec9" },	// p250
 	{ (AutoBuyClassType)(AUTOBUYCLASS_SECONDARY | AUTOBUYCLASS_PISTOL),			LOADOUT_POSITION_INVALID, "taser", "weapon_taser" },	// taser
 	{ (AutoBuyClassType)(AUTOBUYCLASS_PRIMARY | AUTOBUYCLASS_SHOTGUN),			LOADOUT_POSITION_HEAVY0, "nova", "weapon_nova" }, // nova
+	{ (AutoBuyClassType)(AUTOBUYCLASS_PRIMARY | AUTOBUYCLASS_SHOTGUN),			LOADOUT_POSITION_HEAVY2, "sawedoff", "weapon_sawedoff" }, // nova
 	{ (AutoBuyClassType)(AUTOBUYCLASS_PRIMARY | AUTOBUYCLASS_SHOTGUN),			LOADOUT_POSITION_HEAVY1, "xm1014", "weapon_xm1014" },	// xm1014
 	{ (AutoBuyClassType)(AUTOBUYCLASS_PRIMARY | AUTOBUYCLASS_SHOTGUN),			LOADOUT_POSITION_HEAVY2, "mag7", "weapon_mag7" },	// mag7
 	{ (AutoBuyClassType)(AUTOBUYCLASS_PRIMARY | AUTOBUYCLASS_SHOTGUN),			LOADOUT_POSITION_INVALID, "stryker", "weapon_stryker" },	// stryker
@@ -53,8 +54,6 @@ AutoBuyInfoStruct g_autoBuyInfo[] =
 	{ (AutoBuyClassType)(AUTOBUYCLASS_PRIMARY | AUTOBUYCLASS_MACHINEGUN),		LOADOUT_POSITION_HEAVY4, "negev", "weapon_negev" },	// negev
 	{ (AutoBuyClassType)(AUTOBUYCLASS_PRIMARY | AUTOBUYCLASS_AMMO),				LOADOUT_POSITION_INVALID, "primammo", "primammo" },	// primammo
 	{ (AutoBuyClassType)(AUTOBUYCLASS_SECONDARY | AUTOBUYCLASS_AMMO),			LOADOUT_POSITION_INVALID, "secammo", "secammo" }, // secmmo
-	{ (AutoBuyClassType)(AUTOBUYCLASS_ARMOR),									LOADOUT_POSITION_INVALID, "vest", "item_kevlar" }, // vest
-	{ (AutoBuyClassType)(AUTOBUYCLASS_ARMOR),									LOADOUT_POSITION_INVALID, "vesthelm", "item_assaultsuit" }, // vesthelm
 	{ (AutoBuyClassType)(AUTOBUYCLASS_GRENADE),									LOADOUT_POSITION_GRENADE2, "flashbang", "weapon_flashbang" }, // flash
 	{ (AutoBuyClassType)(AUTOBUYCLASS_GRENADE),									LOADOUT_POSITION_GRENADE3, "hegrenade", "weapon_hegrenade" }, // hegren
 	{ (AutoBuyClassType)(AUTOBUYCLASS_GRENADE),									LOADOUT_POSITION_GRENADE4, "smokegrenade", "weapon_smokegrenade" }, // sgren

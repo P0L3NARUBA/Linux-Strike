@@ -111,7 +111,7 @@ WeaponNameInfo s_weaponNameInfo[] =
 	{ WEAPON_MOLOTOV,			"weapon_molotov" },
 	{ WEAPON_INCGRENADE,		"weapon_incgrenade" },
 	{ WEAPON_DECOY,				"weapon_decoy" },
-	{ WEAPON_TAGRENADE,			"weapon_tagrenade" },
+//	{ WEAPON_TAGRENADE,			"weapon_tagrenade" },
 
 	{ WEAPON_C4,				"weapon_c4" },
 
