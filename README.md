@@ -13,6 +13,7 @@ It can be built 100% Open-Source with optional Closed-source components.<br>
 * Arch is recommended, so download [Arch Linux](https://archlinux.org/) and Install it with [archinstall](https://wiki.archlinux.org/title/Archinstall) for an easy setup. 
 
  <h1 align="center"> Fixed Bugs & Additions </h1>
+ 
  - Now when you control the bots, guns will not get lost
  - Bots will now aim more accurately
  - Fixed issue that molotov flame being spawned under you 
