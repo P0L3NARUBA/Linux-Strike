@@ -13,20 +13,19 @@ It can be built 100% Open-Source with optional Closed-source components.<br>
 * Arch is recommended, so download [Arch Linux](https://archlinux.org/) and Install it with [archinstall](https://wiki.archlinux.org/title/Archinstall) for an easy setup. 
 
  <h1 align="center"> Fixed Bugs & Additions </h1>
-
  - Now when you control the bots, guns will not get lost
  - Bots will now aim more accurately
- - Fixed Molotov flame issue
- - Cant Create Mixer issues fixed, now game can find sounds
- - Fixed some breakable constrains fly away
+ - Fixed issue that molotov flame being spawned under you 
+ - "Cant Create Mixer" issues fixed, now game can find sounds
+ - Fixed some breakable props fly away or doing strange behaviour
  - A lot of changes made into the ivp, vphysics and gameplay in general
  - Ragdolls was behaving weird, now everything works as intended
- - Added Bullet Physics Back for testing purposes, it was removed
- - Also lots of stuff got fixed and we added a lot of other large variety of things.
+ - Lots of bugs got fixed and we added a lot of other large variety of things.
 
 <h1 align="center"> TO-DO </h1>
 
-- Remove code/item leftovers and clean-up the unnecessary stuff.
+- Remove code/item leftovers and clean-up the unnecessary stuff
+- Fix "item_assaultsuit is missing an item definition in the schema" error.
 
 **<p align="center">
 If you want to contribute to our repo, don't even hesitate.<br>
