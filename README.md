@@ -26,7 +26,8 @@ It can be built 100% Open-Source with optional Closed-source components.<br>
 <h1 align="center"> TO-DO </h1>
 
 - Remove code/item leftovers and clean-up the unnecessary stuff
-- Fix "item_assaultsuit is missing an item definition in the schema" error.
+- Fix "item_assaultsuit is missing an item definition in the schema" error
+- Fix cannot purchase some weapons.
 
 **<p align="center">
 If you want to contribute to our repo, don't even hesitate.<br>
