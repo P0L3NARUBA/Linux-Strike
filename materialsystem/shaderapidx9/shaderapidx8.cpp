@@ -3008,11 +3008,11 @@ bool CShaderAPIDx8::RestorePersistedDisplay( bool bUseFrontBuffer )
 	Dx9Device()->CreateVertexDeclaration( VertexElements, &pVertexDecl );
 	XMMATRIX matWVP = XMMatrixOrthographicOffCenterLH( 0, (FLOAT)w, (FLOAT)h, 0, 0, 1 );
 
-	ConVarRef mat_monitorgamma( "mat_monitorgamma" );
-	ConVarRef mat_monitorgamma_tv_range_min( "mat_monitorgamma_tv_range_min" );
-	ConVarRef mat_monitorgamma_tv_range_max( "mat_monitorgamma_tv_range_max" );
-	ConVarRef mat_monitorgamma_tv_exp( "mat_monitorgamma_tv_exp" );
-	ConVarRef mat_monitorgamma_tv_enabled( "mat_monitorgamma_tv_enabled" );
+	//ConVarRef mat_monitorgamma( "mat_monitorgamma" );
+	//ConVarRef mat_monitorgamma_tv_range_min( "mat_monitorgamma_tv_range_min" );
+	//ConVarRef mat_monitorgamma_tv_range_max( "mat_monitorgamma_tv_range_max" );
+	//ConVarRef mat_monitorgamma_tv_exp( "mat_monitorgamma_tv_exp" );
+	//ConVarRef mat_monitorgamma_tv_enabled( "mat_monitorgamma_tv_enabled" );
 	g_pShaderDeviceDx8->SetHardwareGammaRamp( mat_monitorgamma.GetFloat(), mat_monitorgamma_tv_range_min.GetFloat(), mat_monitorgamma_tv_range_max.GetFloat(),
 		mat_monitorgamma_tv_exp.GetFloat(), mat_monitorgamma_tv_enabled.GetBool() );
 

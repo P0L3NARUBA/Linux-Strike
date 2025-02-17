@@ -4065,14 +4065,14 @@ void CShaderDeviceDx8::Present()
 //    used to seeing.
 // TV's generally have a 2.5 gamma, so we need to convert our 2.2 frame buffer into a 2.5 frame buffer for display on a TV
 
-#if defined( CSTRIKE15 )
-ConVar mat_monitorgamma_pwl2srgb( "mat_monitorgamma_pwl2srgb", "0" );
-ConVar mat_monitorgamma_vganonpwlgamma( "mat_monitorgamma_vganonpwlgamma", "2.2" );
-#else
-ConVar mat_monitorgamma_pwl2srgb( "mat_monitorgamma_pwl2srgb", "1" );
-ConVar mat_monitorgamma_vganonpwlgamma( "mat_monitorgamma_vganonpwlgamma", "2.11" );
-#endif
-ConVar mat_monitorgamma_force_480_full_tv_range( "mat_monitorgamma_force_480_full_tv_range", "1" );
+//#if defined( CSTRIKE15 )
+//ConVar mat_monitorgamma_pwl2srgb( "mat_monitorgamma_pwl2srgb", "0" );
+//ConVar mat_monitorgamma_vganonpwlgamma( "mat_monitorgamma_vganonpwlgamma", "2.2" );
+//#else
+//ConVar mat_monitorgamma_pwl2srgb( "mat_monitorgamma_pwl2srgb", "1" );
+//ConVar mat_monitorgamma_vganonpwlgamma( "mat_monitorgamma_vganonpwlgamma", "2.11" );
+//#endif
+//ConVar mat_monitorgamma_force_480_full_tv_range( "mat_monitorgamma_force_480_full_tv_range", "1" );
 
 void CShaderDeviceDx8::SetHardwareGammaRamp( float fGamma, float fGammaTVRangeMin, float fGammaTVRangeMax, float fGammaTVExponent, bool bTVEnabled )
 {
@@ -4131,20 +4131,20 @@ void CShaderDeviceDx8::SetHardwareGammaRamp( float fGamma, float fGammaTVRangeMi
 		// We're purposely want PWL adjustment *enabled* here, even though we're no longer using PWL adjusted textures. This adjusts for the distortion introduced
 		// into our overall signal transfer function at low linear light scales.
 		float flSrgbGammaValue;
-		if ( IsX360() && mat_monitorgamma_pwl2srgb.GetInt() )
-		{
+		//if ( IsX360() && mat_monitorgamma_pwl2srgb.GetInt() )
+		//{
 			// First undo the 360 broken sRGB curve by bringing the value back into linear space
-			float flLinearValue = X360GammaToLinear( flInputValue );
-			flLinearValue = clamp( flLinearValue, 0.0f, 1.0f );
+		//	float flLinearValue = X360GammaToLinear( flInputValue );
+		//	flLinearValue = clamp( flLinearValue, 0.0f, 1.0f );
 
 			// Now apply a true sRGB curve to mimic PC hardware
-			flSrgbGammaValue = SrgbLinearToGamma( flLinearValue ); // ( flLinearValue <= 0.0031308f ) ? ( flLinearValue * 12.92f ) : ( 1.055f * powf( flLinearValue, ( 1.0f / 2.4f ) ) ) - 0.055f;
-			flSrgbGammaValue = clamp( flSrgbGammaValue, 0.0f, 1.0f );
-		}
-		else
-		{
+		//	flSrgbGammaValue = SrgbLinearToGamma( flLinearValue ); // ( flLinearValue <= 0.0031308f ) ? ( flLinearValue * 12.92f ) : ( 1.055f * powf( flLinearValue, ( 1.0f / 2.4f ) ) ) - 0.055f;
+		//	flSrgbGammaValue = clamp( flSrgbGammaValue, 0.0f, 1.0f );
+		//}
+		//else
+		//{
 			flSrgbGammaValue = flInputValue;
-		}
+		//}
 
 		// Apply the user controlled exponent curve
 		float flCorrection = pow( flSrgbGammaValue, ( fGamma / 2.2f ) );

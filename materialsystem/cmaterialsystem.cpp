@@ -2129,13 +2129,12 @@ static ConVar mat_reducefillrate(	"mat_reducefillrate", "0" );
 
 // moved up: static ConVar mat_picmip(			"mat_picmip", "0", FCVAR_NONE, "", true, -10, true, 4 );
 
-static ConVar mat_monitorgamma(		"mat_monitorgamma", "2.2", FCVAR_ARCHIVE | FCVAR_ARCHIVE_GAMECONSOLE, "monitor gamma (typically 2.2 for CRT and 1.7 for LCD)", true, 1.6f, true, 2.6f  );
-static ConVar mat_monitorgamma_tv_range_min( "mat_monitorgamma_tv_range_min", "16" );
-static ConVar mat_monitorgamma_tv_range_max( "mat_monitorgamma_tv_range_max", "235" );
+// static ConVar mat_monitorgamma(		"mat_monitorgamma", "2.2", FCVAR_ARCHIVE | FCVAR_ARCHIVE_GAMECONSOLE, "monitor gamma (typically 2.2 for CRT and 1.7 for LCD)", true, 1.6f, true, 2.6f  );
+// static ConVar mat_monitorgamma_tv_range_min( "mat_monitorgamma_tv_range_min", "16" );
+// static ConVar mat_monitorgamma_tv_range_max( "mat_monitorgamma_tv_range_max", "235" );
 // TV's generally have a 2.5 gamma, so we need to convert our 2.2 frame buffer into a 2.5 frame buffer for display on a TV
-static ConVar mat_monitorgamma_tv_exp( "mat_monitorgamma_tv_exp", "2.5", 0, "", true, 1.0f, true, 4.0f );
-
-static ConVar mat_monitorgamma_tv_enabled( "mat_monitorgamma_tv_enabled", IsGameConsole() ? "1" : "0", FCVAR_ARCHIVE | FCVAR_ARCHIVE_GAMECONSOLE, "" );
+// static ConVar mat_monitorgamma_tv_exp( "mat_monitorgamma_tv_exp", "2.5", 0, "", true, 1.0f, true, 4.0f );
+// static ConVar mat_monitorgamma_tv_enabled( "mat_monitorgamma_tv_enabled", IsGameConsole() ? "1" : "0", FCVAR_ARCHIVE | FCVAR_ARCHIVE_GAMECONSOLE, "" );
 
 static ConVar mat_triplebuffered(   "mat_triplebuffered", "0", 0, "This means we want triple buffering if we are fullscreen and vsync'd" );
 static ConVar mat_antialias(		"mat_antialias", "0" );
@@ -2201,11 +2200,11 @@ void CMaterialSystem::ReadConfigFromConVars( MaterialSystem_Config_t *pConfig )
 
 	pConfig->skipMipLevels = mat_picmip.GetInt();
 
-	pConfig->m_fMonitorGamma = mat_monitorgamma.GetFloat();
-	pConfig->m_fGammaTVRangeMin = mat_monitorgamma_tv_range_min.GetFloat();
-	pConfig->m_fGammaTVRangeMax = mat_monitorgamma_tv_range_max.GetFloat();
-	pConfig->m_fGammaTVExponent = mat_monitorgamma_tv_exp.GetFloat();
-	pConfig->m_bGammaTVEnabled = mat_monitorgamma_tv_enabled.GetBool();
+	// pConfig->m_fMonitorGamma = mat_monitorgamma.GetFloat();
+	// pConfig->m_fGammaTVRangeMin = mat_monitorgamma_tv_range_min.GetFloat();
+	// pConfig->m_fGammaTVRangeMax = mat_monitorgamma_tv_range_max.GetFloat();
+	// pConfig->m_fGammaTVExponent = mat_monitorgamma_tv_exp.GetFloat();
+	// pConfig->m_bGammaTVEnabled = mat_monitorgamma_tv_enabled.GetBool();
 
 	pConfig->m_bWantTripleBuffered = mat_triplebuffered.GetBool();
 	pConfig->m_nAASamples = mat_antialias.GetInt();
@@ -2264,11 +2263,11 @@ void CMaterialSystem::WriteConfigIntoConVars( const MaterialSystem_Config_t &con
 	mat_picmip.SetValue( config.skipMipLevels );
 	mat_phong.SetValue( config.UsePhong() );
 
-	mat_monitorgamma.SetValue( config.m_fMonitorGamma );
-	mat_monitorgamma_tv_range_min.SetValue( config.m_fGammaTVRangeMin );
-	mat_monitorgamma_tv_range_max.SetValue( config.m_fGammaTVRangeMax );
-	mat_monitorgamma_tv_exp.SetValue( config.m_fGammaTVExponent );
-	mat_monitorgamma_tv_enabled.SetValue( config.m_bGammaTVEnabled );
+	// mat_monitorgamma.SetValue( config.m_fMonitorGamma );
+	// mat_monitorgamma_tv_range_min.SetValue( config.m_fGammaTVRangeMin );
+	// mat_monitorgamma_tv_range_max.SetValue( config.m_fGammaTVRangeMax );
+	// mat_monitorgamma_tv_exp.SetValue( config.m_fGammaTVExponent );
+	// mat_monitorgamma_tv_enabled.SetValue( config.m_bGammaTVEnabled );
 
 	mat_triplebuffered.SetValue( config.m_bWantTripleBuffered ? 1 : 0 );
 	mat_antialias.SetValue( config.m_nAASamples );
