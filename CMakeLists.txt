@@ -49,6 +49,7 @@ add_subdirectory(soundsystem/lowlevel)
 endif()
 add_subdirectory(thirdparty/quickhull)
 add_subdirectory(thirdparty/zlib-1.2.8)
+# for vaudio_opus
 add_subdirectory(thirdparty/opus)
 add_subdirectory(thirdparty/libpng-1.5.30)
 add_subdirectory(thirdparty/protobuf-3.5.1/cmake)
