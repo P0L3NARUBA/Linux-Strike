@@ -40,7 +40,6 @@ cmake-dev-test/*
 cmake-build-*/*
 rocketui/cmake-build-*/*
 scaleformui/cmake-build-*/*
-vphysics_bullet/cmake-build-*/*
 
 #Ignore rebuilt static libs
 *.a
@@ -81,9 +80,6 @@ lib/public/linux64/st*
 hammer_qt/*
 hammer_launcher_qt/*
 public/vphysics_interfaceV32.h
-public/vphysics_bullet/*
-vphysics_bullet/*
 vphysics/*
 ivp/*
-thirdparty/bullet3/*
 /hammer_launcher_qt/
