@@ -1157,6 +1157,7 @@ void CInputSystem::SetRumble( float fLeftMotor, float fRightMotor, int userId )
 //-----------------------------------------------------------------------------
 void CInputSystem::StopRumble( int userId )
 {
+	#ifndef LINUX
 	if ( IsPlatformWindowsPC() )
 	{
 		if ( userId == INVALID_USER_ID )
@@ -1189,10 +1190,11 @@ void CInputSystem::StopRumble( int userId )
 	}
 	else
 	{
-#ifndef LINUX
+
 		SetXDeviceRumble( 0, 0, userId );
-#endif
+
 	}
+#endif
 }
 
 

@@ -8,6 +8,8 @@ set(OUTBINDIR "${OUTBINDIR}${PLATSUBDIR}")
 
 #set(ConfigurationType "Dynamic Library (.dll)") #not used
 
+set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
+
 #Target
 add_library(${OUTBINNAME} SHARED)
 
