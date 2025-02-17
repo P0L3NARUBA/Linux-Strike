@@ -1,0 +1,3 @@
+[submodule "vphysics"]
+	path = vphysics
+	url = https://github.com/P0L3NARUBA/vphysics
