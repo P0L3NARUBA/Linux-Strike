@@ -5,7 +5,7 @@
 # UI Options
 option(USE_ROCKETUI "Use New Open Source Kisak-Strike RmlUI" OFF)
 option(USE_SCALEFORM "Use In-Complete Proprietary Flash UI with blob ( Not Recommended )" OFF)
-# There is also a 3rd option, which is nothing. Nothing will enable base VGUI UI which is also incomplete.
+# There is also a 3rd option, which is nothing. so it'll be defaulted to RocketUI
 
 # Physics Options
 option(USE_IPHYS "Use the Open Source Physics Re-Build made for linux-strike from various leaked sources" OFF)
@@ -15,10 +15,12 @@ option(BULLET_PHYSICS_MT "Use Multi-Threading for the Bullet Physics Engine. Use
 
 # Sound Options
 option(USE_VALVE_HRTF "Use the Closed Source Valve Sound System" OFF)
+# 2nd option is to have this OFF, the closed source blob from Valve will be used instead.
 
 # DEDICATED Server
 option(DEDICATED "Build as DEDICATED server. This is Separate from the main build and they are not in-tree compatible.
 Make sure to build with -DDEDICATED=0 once you want a regular client again." OFF)
+# 2nd option is to have this OFF, the client build will be built.
 
 # Kisak-Strike Developer Options
 # (Gamer Tip: use gdb command `b __asan::ReportGenericError` to break on ASAN errors)
