@@ -533,7 +533,7 @@ bool CreateDefaultVideoKeyValues( VidMatConfigData_t &configData )
 	configData.pConfigKeys->SetInt( "setting.aspectratiomode", GetScreenAspectMode( configData.nPhysicalScreenWidth, configData.nPhysicalScreenHeight ) );
 	configData.pConfigKeys->SetInt( "setting.mat_vsync", IsGameConsole() ? 1 : 0 );
 	configData.pConfigKeys->SetInt( "setting.mat_triplebuffered", 0 );
-	configData.pConfigKeys->SetFloat( "setting.mat_monitorgamma", 2.2f );
+//	configData.pConfigKeys->SetFloat( "setting.mat_monitorgamma", 2.2f );
 	configData.pConfigKeys->SetInt( "setting.mat_queue_mode", -1 );
 	// Before, mat_motion_blur_enabled came from gpu_level.csv (it was set to 0 at GPU levels 0 and 1, and 1 at higher levels).
 	// These GPU levels are not that useful in CS:GO any longer (because we've dumped a bunch of old cards not capable of at least shader model 3), and

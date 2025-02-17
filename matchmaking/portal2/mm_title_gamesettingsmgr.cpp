@@ -1,4 +1,4 @@
-//===== Copyright © 1996-2009, Valve Corporation, All rights reserved. ======//
+//===== Copyright ï¿½ 1996-2009, Valve Corporation, All rights reserved. ======//
 //
 // Purpose: 
 //
@@ -334,7 +334,7 @@ void CMatchTitleGameSettingsMgr::ExtendDatacenterReport( KeyValues *cmd, char co
 			// audio/video
 			cmd->SetFloat( "sys_vol", td3->cvSystem.volume );
 			cmd->SetFloat( "sys_mus", td3->cvSystem.snd_musicvolume );
-			cmd->SetFloat( "sys_gam", td3->cvSystem.mat_monitorgamma );
+			//cmd->SetFloat( "sys_gam", td3->cvSystem.mat_monitorgamma );
 			cmd->SetInt( "sys_ssm", td3->cvSystem.ss_splitmode );
 			cmd->SetInt( "sys_bit", td3->cvSystem.bitfields[0] );
 		}

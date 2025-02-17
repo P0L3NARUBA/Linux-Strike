@@ -1,4 +1,4 @@
-//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ============//
+//========= Copyright ï¿½ 1996-2005, Valve Corporation, All rights reserved. ============//
 //
 // Purpose: 
 //
@@ -27,7 +27,7 @@ void ColorSpace::SetGamma( float screenGamma, float texGamma,
 	int		i, inf;
 	float	g1, g3;
 	float	g;
-	float	brightness = 0.0f; // This used to be configurable. . hardcode to 0.0
+	float	brightness = 2.0f; // This used to be configurable. . hardcode to 0.0
 
 	if( linearFrameBuffer )
 	{

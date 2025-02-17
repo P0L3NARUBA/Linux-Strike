@@ -48,8 +48,8 @@ m_autodelete_pResourceLoadConditions( (KeyValues*) NULL )
 
 	// only gamma is not part of the apply logic
 	// save off original value for discard logic
-	CGameUIConVarRef mat_monitorgamma( "mat_monitorgamma" );
-	m_flOriginalGamma = mat_monitorgamma.GetFloat();
+	// CGameUIConVarRef mat_monitorgamma( "mat_monitorgamma" );
+	// m_flOriginalGamma = mat_monitorgamma.GetFloat();
 
 	m_sldBrightness = NULL;
 	m_drpAspectRatio = NULL;
@@ -210,11 +210,11 @@ void Video::DiscardChangesAndClose()
 	if ( !m_bCurrentWindowed )
 	{
 		// the brightness slider is not part of apply, so need to restore when discarding
-		CGameUIConVarRef mat_monitorgamma( "mat_monitorgamma" );
-		if ( m_flOriginalGamma != mat_monitorgamma.GetFloat() )
-		{
-			mat_monitorgamma.SetValue( m_flOriginalGamma );
-		}
+	//	CGameUIConVarRef mat_monitorgamma( "mat_monitorgamma" );
+	//	if ( m_flOriginalGamma != mat_monitorgamma.GetFloat() )
+	//	{
+	//		mat_monitorgamma.SetValue( m_flOriginalGamma );
+	//	}
 	}
 
 	BaseClass::OnKeyCodePressed( ButtonCodeToJoystickButtonCode( KEY_XBUTTON_B, CBaseModPanel::GetSingleton().GetLastActiveUserId() ) );

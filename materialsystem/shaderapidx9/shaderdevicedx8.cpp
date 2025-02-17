@@ -3505,13 +3505,13 @@ void CShaderDeviceDx8::EnableNonInteractiveMode( MaterialNonInteractiveMode_t mo
 
 	if ( mode != MATERIAL_NON_INTERACTIVE_MODE_NONE )
 	{
-		ConVarRef mat_monitorgamma( "mat_monitorgamma" );
-		ConVarRef mat_monitorgamma_tv_range_min( "mat_monitorgamma_tv_range_min" );
-		ConVarRef mat_monitorgamma_tv_range_max( "mat_monitorgamma_tv_range_max" );
-		ConVarRef mat_monitorgamma_tv_exp( "mat_monitorgamma_tv_exp" );
-		ConVarRef mat_monitorgamma_tv_enabled( "mat_monitorgamma_tv_enabled" );
-		SetHardwareGammaRamp( mat_monitorgamma.GetFloat(), mat_monitorgamma_tv_range_min.GetFloat(), mat_monitorgamma_tv_range_max.GetFloat(),
-			mat_monitorgamma_tv_exp.GetFloat(), mat_monitorgamma_tv_enabled.GetBool() );
+		//ConVarRef mat_monitorgamma( "mat_monitorgamma" );
+		//ConVarRef mat_monitorgamma_tv_range_min( "mat_monitorgamma_tv_range_min" );
+		//ConVarRef mat_monitorgamma_tv_range_max( "mat_monitorgamma_tv_range_max" );
+		//ConVarRef mat_monitorgamma_tv_exp( "mat_monitorgamma_tv_exp" );
+		//ConVarRef mat_monitorgamma_tv_enabled( "mat_monitorgamma_tv_enabled" );
+		//SetHardwareGammaRamp( mat_monitorgamma.GetFloat(), mat_monitorgamma_tv_range_min.GetFloat(), mat_monitorgamma_tv_range_max.GetFloat(),
+		//	mat_monitorgamma_tv_exp.GetFloat(), mat_monitorgamma_tv_enabled.GetBool() );
 	}
 
 #ifdef _X360
@@ -4108,17 +4108,17 @@ void CShaderDeviceDx8::SetHardwareGammaRamp( float fGamma, float fGammaTVRangeMi
 	// On X360, if we're in TV mode, and not high def and at 480P/I or less, then we disable our [16,235] (or equivalent) conversion because the X360's 
 	// system software already applies this adjustment (as far as we can determine) in the "Standard" Black level mode in the X360 dashboard.
 	// See: System Settings->Console Settings->Display->Black Level
-	if ( ( bTVEnabled ) && ( mat_monitorgamma_force_480_full_tv_range.GetBool() ) )
-	{
-		XVIDEO_MODE xvideoMode;
-		XGetVideoMode( &xvideoMode );
-		if ( ( !xvideoMode.fIsHiDef ) && ( xvideoMode.dwDisplayHeight <= 480 ) )
-		{
-			fGammaTVRangeMin = 0;
-			fGammaTVRangeMax = 255;
+	//if ( ( bTVEnabled ) && ( mat_monitorgamma_force_480_full_tv_range.GetBool() ) )
+	//{
+	//	XVIDEO_MODE xvideoMode;
+	//	XGetVideoMode( &xvideoMode );
+	//	if ( ( !xvideoMode.fIsHiDef ) && ( xvideoMode.dwDisplayHeight <= 480 ) )
+	//	{
+	//		fGammaTVRangeMin = 0;
+	//		fGammaTVRangeMax = 255;
 
 			//Warning( "CShaderDeviceDx8::SetHardwareGammaRamp: Forcing TV range min/max in 480I/P mode to [0,255]\n" );
-		}
+//		}
 	}
 #endif
 
