@@ -1,3 +1,6 @@
 [submodule "vphysics"]
 	path = vphysics
 	url = https://github.com/P0L3NARUBA/vphysics
+[submodule "ivp"]
+	path = ivp
+	url = https://github.com/P0L3NARUBA/ivp
