@@ -39,8 +39,6 @@ endif()
 
 if( USE_IPHYS )
     add_definitions(-DUSE_IPHYS)
-elseif( USE_BULLET_PHYSICS )
-    add_definitions(-DUSE_BULLET_PHYSICS)
 endif()
 
 if( LINUXALL )

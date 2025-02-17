@@ -9,9 +9,7 @@ option(USE_SCALEFORM "Use In-Complete Proprietary Flash UI with blob ( Not Recom
 
 # Physics Options
 option(USE_IPHYS "Use the Open Source Physics Re-Build made for linux-strike from various leaked sources" OFF)
-option(USE_BULLET_PHYSICS "Use Open Source Bullet3 Physics Engine(zlib)" OFF)
-option(BULLET_PHYSICS_MT "Use Multi-Threading for the Bullet Physics Engine. Use convar 'bt_threadcount' to set." OFF)
-# 4th option is to have both of these OFF, the closed source blob from Valve will be used instead.
+# 2nd option is to have this OFF, the closed source blob from Valve will be used instead.
 
 # Sound Options
 option(USE_VALVE_HRTF "Use the Closed Source Valve Sound System" OFF)
