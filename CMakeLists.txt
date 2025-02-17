@@ -117,6 +117,7 @@ if( USE_IPHYS )
     add_subdirectory(ivp/ivp_compact_builder)
     add_subdirectory(ivp/ivp_physics)
     add_subdirectory(vphysics)
+
 #Experimental open source Bullet Physics
 elseif( USE_BULLET_PHYSICS )
     add_definitions(-DUSE_BULLET_PHYSICS)
@@ -144,7 +145,7 @@ elseif( USE_BULLET_PHYSICS )
     add_subdirectory(thirdparty/bullet3)
     add_subdirectory(vphysics_bullet)
 else()
-message("How dare you,\nUsing Closed-Source Physics made by Valve")
+message("How dare you,\nUsing Closed-Source Physics made by Valve\n")
 endif()
 
 if( DEDICATED )
