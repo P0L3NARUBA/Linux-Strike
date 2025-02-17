@@ -738,7 +738,7 @@ bool CSourceAppSystemGroup::Create()
 #if defined( USE_IPHYS )
         { LAUNCHER_APPSYSTEM( "iphys" ),				VPHYSICS_INTERFACE_VERSION },
 #elif defined( USE_BULLET_PHYSICS )
-        { LAUNCHER_APPSYSTEM( "bulletphysics" ),				VPHYSICS_INTERFACE_VERSION },
+        { LAUNCHER_APPSYSTEM( "bulletvphysics" ),				VPHYSICS_INTERFACE_VERSION },
 #else
         { LAUNCHER_APPSYSTEM( "vphysics" ),				VPHYSICS_INTERFACE_VERSION },
 #endif
