@@ -4,9 +4,6 @@
 [submodule "ivp"]
 	path = ivp
 	url = https://github.com/P0L3NARUBA/ivp
-[submodule "vphysics_bullet"]
-	path = vphysics_bullet
-	url = https://github.com/P0L3NARUBA/vphysics_bullet
 [submodule "thirdparty"]
 	path = thirdparty
 	url = https://github.com/P0L3NARUBA/ls-thirdparty
