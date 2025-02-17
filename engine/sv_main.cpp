@@ -256,7 +256,7 @@ ConVar  sv_lan( "sv_lan", "0", FCVAR_RELEASE, "Server is a lan server ( no heart
 static	ConVar	sv_pausable( "sv_pausable","0", FCVAR_RELEASE, "Is the server pausable." );
 static	ConVar	sv_contact( "sv_contact", "", FCVAR_NOTIFY  | FCVAR_RELEASE, "Contact email for server sysop" );
 static	ConVar	sv_cacheencodedents("sv_cacheencodedents", "1", 0, "If set to 1, does an optimization to prevent extra SendTable_Encode calls.");
-        ConVar	sv_voicecodec("sv_voicecodec", "vaudio_celt", FCVAR_RELEASE | FCVAR_REPLICATED, "Specifies which voice codec DLL to use in a game. Set to the name of the DLL without the extension.");
+        ConVar	sv_voicecodec("sv_voicecodec", "vaudio_opus", FCVAR_RELEASE | FCVAR_REPLICATED, "Specifies which voice codec DLL to use in a game. Set to the name of the DLL without the extension.");
 static	ConVar	sv_voiceenable( "sv_voiceenable", "1", FCVAR_ARCHIVE|FCVAR_NOTIFY  | FCVAR_RELEASE ); // set to 0 to disable all voice forwarding.
         ConVar  sv_downloadurl( "sv_downloadurl", "", FCVAR_REPLICATED | FCVAR_RELEASE, "Location from which clients can download missing files" );
         ConVar  sv_consistency( "sv_consistency", "0", FCVAR_REPLICATED | FCVAR_RELEASE, "Whether the server enforces file consistency for critical files" );
