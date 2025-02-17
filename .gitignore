@@ -84,5 +84,6 @@ public/vphysics_interfaceV32.h
 public/vphysics_bullet/*
 vphysics_bullet/*
 vphysics/*
+ivp/*
 thirdparty/bullet3/*
 /hammer_launcher_qt/
