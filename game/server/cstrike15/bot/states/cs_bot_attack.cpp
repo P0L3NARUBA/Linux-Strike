@@ -327,9 +327,8 @@ void AttackState::OnUpdate( CCSBot *me )
 			weapon->GetCSWeaponID() == WEAPON_SMOKEGRENADE ||
 			weapon->GetCSWeaponID() == WEAPON_MOLOTOV ||
 			weapon->GetCSWeaponID() == WEAPON_INCGRENADE ||
-			weapon->GetCSWeaponID() == WEAPON_DECOY // ||
-			//weapon->GetCSWeaponID() == WEAPON_TAGRENADE 
-			)
+			weapon->GetCSWeaponID() == WEAPON_DECOY  ||
+			weapon->GetCSWeaponID() == WEAPON_TAGRENADE )
 		{
 			me->EquipBestWeapon();
 		}

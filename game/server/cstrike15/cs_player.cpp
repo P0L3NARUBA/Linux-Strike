@@ -11282,7 +11282,7 @@ bool CCSPlayer::Weapon_CanUse( CBaseCombatWeapon *pBaseWeapon )
 		// we don't want bots picking up items for players in the world
 		if ( IsBot() && CSGameRules() && CSGameRules()->IsPlayingCoopMission() )
 		{
-			// if ( pWeapon->IsConstrained() || pWeapon->IsA( WEAPON_TAGRENADE ) )
+			 if ( pWeapon->IsConstrained() || pWeapon->IsA( WEAPON_TAGRENADE ) )
 				return false;
 		}
 
@@ -12942,8 +12942,8 @@ void CCSPlayer::DestroyWeapons( bool bDropC4 /* = true */ )
 		"weapon_incgrenade",
 		"weapon_smokegrenade",
 		"weapon_hegrenade",
-		"weapon_flashbang",
-	//	"weapon_tagrenade",
+    	"weapon_flashbang",
+		"weapon_tagrenade",
 		"weapon_decoy",
 	};
 
@@ -13102,7 +13102,7 @@ void CCSPlayer::DropWeapons( bool fromDeath, bool killedByEnemy )
 			"weapon_smokegrenade",
 			"weapon_hegrenade",
 			"weapon_flashbang",
-		//	"weapon_tagrenade",
+			"weapon_tagrenade",
 			"weapon_decoy",
 		};
 
@@ -13114,7 +13114,7 @@ void CCSPlayer::DropWeapons( bool fromDeath, bool killedByEnemy )
 		case WEAPON_HEGRENADE: GrenadePriorities[0] = "weapon_hegrenade"; break;
 		case WEAPON_SMOKEGRENADE: GrenadePriorities[0] = "weapon_smokegrenade"; break;
 		case WEAPON_DECOY: GrenadePriorities[0] = "weapon_decoy"; break;
-		//case WEAPON_TAGRENADE: GrenadePriorities[0] = "weapon_tagrenade"; break;
+		case WEAPON_TAGRENADE: GrenadePriorities[0] = "weapon_tagrenade"; break;
 		}
 		m_nPreferredGrenadeDrop = 0; // after we drop a preferred grenade make sure we reset the field
 

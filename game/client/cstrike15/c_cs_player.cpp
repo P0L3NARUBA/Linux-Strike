@@ -265,7 +265,7 @@ CAddonInfo g_AddonInfo[] =
 	{ "grenade4",	"weapon_decoy",			0, 0 },
 	{ "knife",		"weapon_knife",			0, 0 },
 	{ "facemask",	0,						"models/player/holiday/facemasks/facemask_skull.mdl", 0 },
-//	{ "grenade4",	"weapon_tagrenade",	0, 0 },
+	{ "grenade4",	"weapon_tagrenade",	0, 0 },
 };
 
 CAddonInfo g_ClientSideAddons[] =

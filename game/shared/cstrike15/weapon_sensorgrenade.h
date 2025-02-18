@@ -29,7 +29,7 @@ public:
 
 	CSensorGrenade() {}
 
-	// virtual CSWeaponID GetCSWeaponID( void ) const { return WEAPON_TAGRENADE; }
+	 virtual CSWeaponID GetCSWeaponID( void ) const { return WEAPON_TAGRENADE; }
 
 #if !defined( CLIENT_DLL )
 	DECLARE_DATADESC();

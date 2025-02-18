@@ -30,8 +30,8 @@ END_NETWORK_TABLE()
 BEGIN_PREDICTION_DATA( CSensorGrenade )
 END_PREDICTION_DATA()
 
-//LINK_ENTITY_TO_CLASS_ALIASED( weapon_tagrenade, SensorGrenade );
-//PRECACHE_REGISTER( weapon_tagrenade );
+LINK_ENTITY_TO_CLASS_ALIASED( weapon_tagrenade, SensorGrenade );
+PRECACHE_REGISTER( weapon_tagrenade );
 
 #if !defined( CLIENT_DLL )
 
