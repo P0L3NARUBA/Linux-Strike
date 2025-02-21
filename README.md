@@ -4,7 +4,7 @@
 
 * Linux Strike: Arch Offensive(LS:AO) is a CS:GO port aimed towards Linux enthusiasts.<br>
 It can be built 100% Open-Source with optional Closed-source components.<br>
-* See the wiki page of repository for everything about Compiling Linux Strike and more: https://github.com/P0L3NARUBA/Linux-Strike/wiki
+* See the wiki page of repository for everything about Linux Strike and more: https://github.com/P0L3NARUBA/Linux-Strike/wiki
 * Arch is recommended, so download [Arch Linux](https://archlinux.org/) and Install it with [archinstall](https://wiki.archlinux.org/title/Archinstall) for an easy setup. 
 
  <h1 align="center"> Features / Additions </h1>
